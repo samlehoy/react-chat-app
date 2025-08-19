@@ -1,0 +1,27 @@
+/* src/styles.css */
+:root { font-family: system-ui, Arial; }
+body, #root { margin: 0; height: 100vh; }
+.chat-wrap { display: grid; grid-template-rows: auto 1fr auto; height: 100vh; max-width: 900px; margin: 0 auto; }
+
+.chat-header { display: flex; gap: 12px; align-items: center; padding: 12px 16px; border-bottom: 1px solid #eee; }
+.chat-header img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
+
+.messages { padding: 12px; display: flex; flex-direction: column; gap: 10px; overflow: auto; background: #fafafa; }
+.message { max-width: 80%; display: grid; gap: 4px; }
+.message.mine { margin-left: auto; text-align: right; }
+.message .bubble { background: white; padding: 8px 10px; border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+.message.mine .bubble { background: #dcf8c6; }
+.message img { max-width: min(360px, 70vw); border-radius: 8px; display: block; }
+.message video { width: min(360px, 70vw); border-radius: 8px; display: block; }
+.message .file { display: flex; align-items: center; gap: 10px; }
+.pdf-thumb { width: 56px; height: 70px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd; }
+.meta { font-size: 12px; color: #666; display: flex; gap: 8px; }
+.reply { font-size: 12px; color: #555; border-left: 3px solid #ccc; padding-left: 6px; }
+.input { display: flex; gap: 8px; padding: 10px; border-top: 1px solid #eee; background: #fff; }
+.input input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
+.input button { padding: 10px 14px; border: none; background: #0ea5e9; color: #fff; border-radius: 8px; cursor: pointer; }
+.center { display: grid; place-items: center; height: 100vh; color: #666; }
+@media (max-width: 640px) {
+  .chat-wrap { max-width: 100%; }
+  .message img, .message video { max-width: 85vw; }
+}

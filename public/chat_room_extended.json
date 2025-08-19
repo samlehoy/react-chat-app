@@ -1,0 +1,108 @@
+{
+  "results": [
+    {
+      "room": {
+        "id": 12456,
+        "name": "Product A",
+        "image_url": "https://picsum.photos/id/237/200/300",
+        "participant": [
+          { "id": "admin@mail.com", "name": "Admin", "role": 0 },
+          { "id": "agent@mail.com", "name": "Agent A", "role": 1 },
+          { "id": "customer@mail.com", "name": "king customer", "role": 2 }
+        ]
+      },
+      "comments": [
+        {
+          "id": 885512,
+          "type": "text",
+          "message": "Selamat malam",
+          "sender": "customer@mail.com",
+          "sent_at": "2025-08-19T17:01:00Z"
+        },
+        {
+          "id": 885513,
+          "type": "text",
+          "message": "Malam",
+          "sender": "agent@mail.com",
+          "sent_at": "2025-08-19T17:02:00Z",
+          "reply_to": 885512
+        },
+        {
+          "id": 885514,
+          "type": "text",
+          "message": "Ada yang bisa saya bantu?",
+          "sender": "agent@mail.com",
+          "sent_at": "2025-08-19T17:03:00Z"
+        },
+        {
+          "id": 885515,
+          "type": "text",
+          "message": "Saya ingin mengirimkan bukti pembayaran, karena diaplikasi selalu gagal",
+          "sender": "customer@mail.com",
+          "sent_at": "2025-08-19T17:04:00Z",
+          "edited": false
+        },
+        {
+          "id": 885516,
+          "type": "text",
+          "message": "Baik, silahkan kirimkan lampiran bukti pembayarannya",
+          "sender": "agent@mail.com",
+          "sent_at": "2025-08-19T17:05:00Z"
+        },
+        {
+          "id": 885517,
+          "type": "image",
+          "sender": "customer@mail.com",
+          "sent_at": "2025-08-19T17:06:15Z",
+          "caption": "Ini bukti pembayaran.",
+          "media": {
+            "url": "https://storage.example.com/payments/INV-001.jpg",
+            "mime": "image/jpeg",
+            "size_bytes": 184532,
+            "width": 1080,
+            "height": 1350,
+            "thumb_url": "https://storage.example.com/payments/INV-001-thumb.jpg"
+          }
+        },
+        {
+          "id": 885518,
+          "type": "pdf",
+          "sender": "customer@mail.com",
+          "sent_at": "2025-08-19T17:06:30Z",
+          "caption": "PDF invoice resminya.",
+          "media": {
+            "url": "https://storage.example.com/payments/INV-001.pdf",
+            "mime": "application/pdf",
+            "size_bytes": 502344,
+            "filename": "INV-001.pdf",
+            "pages": 1,
+            "thumb_url": "https://storage.example.com/payments/INV-001-preview.png"
+          }
+        },
+        {
+          "id": 885519,
+          "type": "video",
+          "sender": "agent@mail.com",
+          "sent_at": "2025-08-19T17:07:10Z",
+          "caption": "Cara upload bukti via aplikasi.",
+          "media": {
+            "url": "https://storage.example.com/tutorials/upload-proof.mp4",
+            "mime": "video/mp4",
+            "size_bytes": 2450034,
+            "duration_sec": 21,
+            "width": 1280,
+            "height": 720,
+            "thumb_url": "https://storage.example.com/tutorials/upload-proof-thumb.jpg"
+          }
+        },
+        {
+          "id": 885520,
+          "type": "text",
+          "message": "Sudah kami terima, terima kasih 🙏",
+          "sender": "agent@mail.com",
+          "sent_at": "2025-08-19T17:08:00Z"
+        }
+      ]
+    }
+  ]
+}
