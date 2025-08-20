@@ -1,2 +1,2 @@
 # react-chat-app
-Simple Chat App with React
+Simple Dummy JSON Chat-App with React

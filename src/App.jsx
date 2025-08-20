@@ -1,7 +1,6 @@
-// src/App.jsx
 import { useEffect, useState } from "react";
 import Chat from "./components/Chat";
-import "./styles.css";
+import "./index.css";
 
 export default function App() {
   const [data, setData] = useState(null);
@@ -19,17 +18,15 @@ export default function App() {
       });
   }, []);
 
-  if (!data) return <div className="center">Loading…</div>;
-  if (data.error) return <div className="center">Error: {data.error}</div>;
-
+  if (!data) return <div className="grid h-screen place-items-center text-gray-500">Loading…</div>;
+  if (data.error) return <div className="grid h-screen place-items-center text-red-600">Error: {data.error}</div>;
 
   const { room, comments } = data.results[0];
-  // urutkan berdasarkan sent_at jika ada, fallback by id
-  const messages = [...comments].sort((a,b) => {
+  const messages = [...comments].sort((a, b) => {
     const ta = a.sent_at || "";
     const tb = b.sent_at || "";
     if (ta && tb) return new Date(ta) - new Date(tb);
-    return (a.id+"").localeCompare(b.id+"");
+    return (a.id + "").localeCompare(b.id + "");
   });
 
   return <Chat room={room} messages={messages} currentUserId="agent@mail.com" />;
