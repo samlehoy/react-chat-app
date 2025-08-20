@@ -1,9 +1,9 @@
-# React Chat UI – Qiscus Intern Test
+# React Chat UI - Qiscus Intern Test
 
 Demo sederhana chat UI yang merender data dari dummy JSON (text, image, video, pdf). Dibuat dengan **React + Vite** dan **Tailwind CSS**.
 
 ## 🚀 Live Demo
-- https://<domain-vercel>/
+- https://react-chat-app-qlct.vercel.app/
 
 ## 📦 Tech
 - React + Vite
