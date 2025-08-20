@@ -11,7 +11,7 @@ A simple demo of a chat UI rendering data from dummy JSON (text, image, video, p
 - Tailwind CSS v4
 
 ## 🗂 Data Structure
-- Data source: `public/chat_room_extended.json`
+- Data source: [`public/chat_room_extended.json`](https://github.com/samlehoy/react-chat-app/blob/main/public/chat_room_extended.json)
 - Schema follows the ERD. Message types: `text | image | video | pdf`.
 
 ## 📸 Preview
@@ -57,7 +57,7 @@ Demo sederhana chat UI yang merender data dari dummy JSON (text, image, video, p
 - Tailwind CSS v4
 
 ## 🗂 Struktur Data
-- Sumber data: `public/chat_room_extended.json`
+- Sumber data: [`public/chat_room_extended.json`](https://github.com/samlehoy/react-chat-app/blob/main/public/chat_room_extended.json)
 - Skema field mengikuti ERD. Tipe pesan: `text | image | video | pdf`.
 
 ## 📸 Preview
