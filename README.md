@@ -19,7 +19,7 @@ A simple demo of a chat UI rendering data from dummy JSON (text, image, video, p
 ### Diagram
 ![Diagram](https://github.com/user-attachments/assets/f78a3ee3-f37c-49c4-82a4-0a38823eb848)
 
-**Diagram Comments:**
+**Diagram Explanation:**
 - **User → React Chat UI (Open App)**: Represents the user opening the React-based chat application.  
 - **React Chat UI ↔ chat_room_extended.json (Fetch Data)**: Dummy JSON file is used as the main data source (rooms, participants, comments).  
 - **React Chat UI → Message List & Media Preview (Render View)**: The UI renders messages including text, images, videos, and PDFs.  
@@ -30,7 +30,7 @@ A simple demo of a chat UI rendering data from dummy JSON (text, image, video, p
 ### ERD
 ![ERD](https://github.com/user-attachments/assets/631a7fca-36fb-4947-9e7a-2ea0a2b22e12)
 
-**ERD Comments:**
+**ERD Explanation:**
 - **USER**: Email as the primary ID. `avatar_url`, `global_role`, and `created_at` are optional.  
 - **ROOM**: Stores chat room information. `is_group` and `created_at` are optional.  
 - **ROOM_PARTICIPANT**: Maps users within a room, with `role_in_room` (0=Admin, 1=Agent, 2=Customer).  
@@ -76,7 +76,7 @@ Demo sederhana chat UI yang merender data dari dummy JSON (text, image, video, p
 ### ERD
 ![ERD](https://github.com/user-attachments/assets/631a7fca-36fb-4947-9e7a-2ea0a2b22e12)
 
-**Komentar ERD:**
+**Penjelasan ERD:**
 - **USER**: Email sebagai ID. `avatar_url`, `global_role`, `created_at` opsional.  
 - **ROOM**: Menyimpan info ruang chat. `is_group`, `created_at` opsional.  
 - **ROOM_PARTICIPANT**: Mapping user dalam room, dengan `role_in_room` (0=Admin, 1=Agent, 2=Customer).  
